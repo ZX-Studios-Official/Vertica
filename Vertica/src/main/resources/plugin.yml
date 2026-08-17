@@ -1,0 +1,62 @@
+name: Vertica
+description: A great base plugin that adds the boring features so you can get into making the fun stuff!
+version: '${version}'
+
+main: me.zxstudios.vertica.Vertica
+api-version: '1.21.11'
+load: STARTUP
+
+authors: [ ZX Studios ]
+
+softdepend:
+  - LuckPerms
+
+commands:
+
+  heal:
+    description: Heals the targeted player.
+    usage: /heal [<player>]
+
+  vertica:
+    description: Some internal commands for the plugin including reloading.
+    usage: /vertica [reload]
+
+  feed:
+    description: Feeds the targeted player.
+    usage: /feed [<player>]
+
+  fly:
+    description: Allows the player to fly upon execution.
+    usage: /fly [<player>]
+
+  mute:
+    description: Mutes the selected player.
+    usage: /mute <player>
+
+  unmute:
+    description: Undoes what /mute did.
+    usage: /unmute <player>
+
+  freeze:
+    description: Freezes selected player, so they cannot move.
+    usage: /freeze <player>
+
+  unfreeze:
+    description: Undoes what /freeze did.
+    usage: /unfreeze <player>
+
+  spawn:
+    description: Teleports the player to spawn
+    usage: /spawn
+
+  setspawn:
+    description: Sets spawn to player's location
+    usage: /setspawn
+
+  ping:
+    description: Shows the player their ping
+    usage: /ping
+
+  tps:
+    description: Shows the player the server TPS
+    usage: /tps

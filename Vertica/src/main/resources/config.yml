@@ -1,0 +1,233 @@
+
+# ------------------------------------------
+# ------------- VERTICA CONFIG -------------
+# ------------------------------------------
+
+# This is the main config of the plugin!
+
+# Tutorial:
+# Player: Here, you can use %player%. It will get replaced by the player's name.
+# Target: Here, you can use %target%. It will get replaced by the target player's name.
+# Message: Here, you can use %message%. It will get replaced by the player's chat message.
+# Prefix: Here, you can use %prefix%. It will get replaced by the player's luckperms prefix.
+# Ping: Here, you can use %ping%. It will get replaced by the player's ping.
+# Tps: Here, you can use %tps%. It will get replaced by the server's tps.
+
+
+# ----------------------------
+
+# General Config:
+
+general:
+  not-player: "[Vertica] You cannot use this command in the console!"
+  no-permission-message: "&7[&c✘&7]&r You don't have permission to execute that command."
+  no-permission-sound: "minecraft:entity.villager.no"
+  too-many-arguments: "&7[&c✘&7]&r This command doesn't have this many arguments."
+  too-many-arguments-sound: "minecraft:entity.villager.no"
+  player-doesnt-exist: "&7[&c✘&7]&r This player doesn't exist."
+  player-doesnt-exist-sound: "minecraft:entity.villager.no"
+  no-arguments: "&7[&c✘&7]&r Please enter the required arguments."
+  no-arguments-sound: "minecraft:entity.villager.no"
+  disable-version-check: false
+  disable-telemetry: false
+
+  reload:
+    permission: "vertica.reload"
+    success: "&7[&a✔&7]&r Successfully reloaded the &dconfig.yml&r."
+    success-sound: "minecraft:entity.experience_orb.pickup"
+
+  update:
+    permission: "vertica.reload"
+
+# ----------------------------
+
+# /Heal Command:
+
+heal:
+  enable: true
+
+  permission: "vertica.heal"
+  success-player: "&7[&a✔&7]&r Successfully healed yourself."
+  success-player-sound: "minecraft:entity.experience_orb.pickup"
+  success-target: "&7[&a✔&7]&r You have been healed by &b%player%&r." # Player
+  success-target-player: "&7[&a✔&7]&r Successfully healed &b%target%&r." # Target
+  success-target-sound: "minecraft:entity.experience_orb.pickup"
+
+# ----------------------------
+
+# /Feed Command:
+
+feed:
+  enable: true
+
+  permission: "vertica.feed"
+  success-player: "&7[&a✔&7]&r Successfully fed yourself."
+  success-player-sound: "minecraft:entity.experience_orb.pickup"
+  success-target: "&7[&a✔&7]&r You have been fed by &b%player%&r." # Player
+  success-target-player: "&7[&a✔&7]&r Successfully fed &b%target%&r." # Target
+  success-target-sound: "minecraft:entity.experience_orb.pickup"
+
+# ----------------------------
+
+# /Fly Command:
+
+fly:
+  enable: true
+
+  permission: "vertica.fly"
+  enabled-player: "&7[&a✔&7]&r Successfully &aEnabled &rfly."
+  enabled-player-sound: "minecraft:entity.experience_orb.pickup"
+  enabled-target: "&7[&a✔&7]&r %player% &aEnabled&r fly for you." # Player
+  enabled-target-player: "&7[&a✔&7]&r Successfully &aEnabled&r fly for &b%target%&r." # Target
+  enabled-target-sound: "minecraft:entity.experience_orb.pickup"
+  disabled-player: "&7[&a✔&7]&r Successfully &cDisabled &rfly."
+  disabled-player-sound: "minecraft:entity.experience_orb.pickup"
+  disabled-target: "&7[&a✔&7]&r %player% &cDisabled&r fly for you." # Player
+  disabled-target-player: "&7[&a✔&7]&r Successfully &cDisabled&r fly for &b%target%&r." # Target
+  disabled-target-sound: "minecraft:entity.experience_orb.pickup"
+
+# ----------------------------
+
+# /Mute And /Unmute Command:
+
+mute:
+  enable: true
+
+  # Mute
+
+  mute-permission: "vertica.mute"
+
+  muted: "&7[&c✘&7]&r You are muted and cannot send messages."
+  muted-sound: "minecraft:entity.villager.no"
+
+  player-already-muted: "&7[&c✘&7]&r This player is already muted."
+  player-already-muted-sound: "minecraft:entity.experience_orb.pickup"
+
+  mute-success: "&7[&a✔&7]&r Successfully muted %target%!" # Target
+  mute-success-sound: "minecraft:entity.experience_orb.pickup"
+
+  mute-success-target: "&7[&e⚠︎︎︎︎︎︎︎︎︎︎&7] &rYou have been muted by %player%" # Player
+  mute-success-target-sound: "minecraft:block.amethyst_block.resonate"
+
+  # Unmute
+
+  unmute-permission: "vertica.unmute"
+
+  player-not-muted: "&7[&c✘&7]&r This player is not muted."
+  player-not-muted-sound: "minecraft:entity.villager.no"
+
+  unmute-success: "&7[&a✔&7]&r Successfully unmuted %target%!" # Target
+  unmute-success-sound: "minecraft:entity.experience_orb.pickup"
+
+  unmute-success-target: "&7[&e⚠︎︎︎︎︎︎︎︎︎︎&7] &rYou have been unmuted by %player%" # Player
+  unmute-success-target-sound: "minecraft:block.amethyst_block.resonate"
+
+# ----------------------------
+
+# /Freeze And /Unfreeze Command:
+
+freeze:
+  enable: true
+
+  # Freeze
+
+  freeze-permission: "vertica.freeze"
+
+  frozen: "&7[&c✘&7]&r You are frozen and cannot send messages."
+  frozen-sound: "minecraft:entity.villager.no"
+
+  player-already-frozen: "&7[&c✘&7]&r This player is already frozen."
+  player-already-frozen-sound: "minecraft:entity.experience_orb.pickup"
+
+  success: "&7[&a✔&7]&r Successfully froze %target%!" # Target
+  success-sound: "minecraft:entity.experience_orb.pickup"
+
+  success-target: "&7[&e⚠︎︎︎︎︎︎︎︎︎︎&7] &rYou have been frozen by %player%" # Player
+  success-target-sound: "minecraft:block.amethyst_block.resonate"
+
+  # Unfreeze
+
+  unfreeze-permission: "vertica.unfreeze"
+
+  player-not-frozen: "&7[&c✘&7]&r This player is not frozen."
+  player-not-frozen-sound: "minecraft:entity.villager.no"
+
+  unfreeze-success: "&7[&a✔&7]&r Successfully unfrozen %target%!" # Target
+  unfreeze-success-sound: "minecraft:entity.experience_orb.pickup"
+
+  unfreeze-success-target: "&7[&e⚠︎︎︎︎︎︎︎︎︎︎&7] &rYou have been unfrozen by %player%" # Player
+  unfreeze-success-target-sound: "minecraft:block.amethyst_block.resonate"
+
+# ----------------------------
+
+# Join & Leave Messages
+
+traction:
+  custom-join-leave-msg: true
+
+  join: "&8[&a+&8]&r %player%" # Player
+  join-sound: "minecraft:block.note_block.bell" # (Plays to all players on the server)
+
+  leave: "&8[&c-&8]&r %player%" # Player
+  leave-sound: "" # (Plays to all players on the server)
+
+  first-join: true
+
+  first-join-msg-L1: "&7&m &m &m &m &m &m &m &m &m &m &m &m &m &m &m &m &m &m &m &m &m &m &m"
+  first-join-msg-L2: "&e%player% joined for the 1st time! Say hi!"
+  first-join-msg-L3: "&7&m &m &m &m &m &m &m &m &m &m &m &m &m &m &m &m &m &m &m &m &m &m &m"
+
+# ----------------------------
+
+# MOTD Control:
+
+MOTD:
+  custom-MOTD: true
+
+  Line-1: "&aThis Server Is Using The &d&lVertica &aPlugin!"
+  Line-2: "&bMake sure to download it on modrinth!"
+
+
+# ----------------------------
+
+# Custom Chat Format
+
+custom-chat-format: true # By setting this to false, the chat format will stay the same as in vanilla
+
+chat-format: "&f%player% &7» &r%message%" # Player, Message, If luckperms is installed: Prefix
+
+# ----------------------------
+
+# /Spawn And Setspawn Command:
+
+spawn:
+  enable: true
+
+  permission: "vertica.spawn"
+  teleport: "&7[&a✔&7]&r Successfully teleported to spawn"
+  teleport-sound: "minecraft:entity.experience_orb.pickup"
+
+setspawn:
+  permission: "vertica.setspawn"
+  setting: "&7[&a✔&7]&r Successfully set spawn to your location."
+  setting-sound: "minecraft:entity.player.levelup"
+
+# ----------------------------
+
+# /Ping And Tps commands:
+
+ping:
+  enable: true
+
+  permission: "vertica.ping"
+  message: "&7[&bℹ&7]&r Your ping is &b%ping%" # Ping
+  message-sound: "minecraft:entity.experience_orb.pickup"
+
+tps:
+  enable: true
+
+  permission: "vertica.tps"
+  setting: "&7[&bℹ&7]&r The server's TPS is %tps%" # Tps
+  setting-sound: "minecraft:entity.player.levelup"
+
+# ----------------------------
