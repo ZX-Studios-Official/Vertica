@@ -25,3 +25,5 @@ Modrinth doesn't allow me to use Discord in here, so report bugs in the link pag
 **DISCLAIMER**
 
 We collect some data to make analytics easier. (We only do it so we can see a number go up lol)
+
+Licenced under the CC BY-NC (https://creativecommons.org/licenses/by-nc/4.0/)
