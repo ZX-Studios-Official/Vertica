@@ -11,9 +11,9 @@ Vertica has a lot of cool and useful features including commands like /fly and /
 
 **DEFAULT PERMISSIONS**
 
-- /heal [<player>] >>> vertica.heal
-- /feed [<player>] >>> vertica.feed
-- /fly [<player>] >>> vertica.fly
+- /heal [player] >>> vertica.heal
+- /feed [player] >>> vertica.feed
+- /fly [player] >>> vertica.fly
 - /vertica (reload, update) >>> vertica.reload/update
 - /mute & /unmute >>> vertica.mute & vertica.unmute
 - /freeze & /unfreeze >>> vertica.freeze & vertica.unfreeze
